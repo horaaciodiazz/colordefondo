@@ -28,7 +28,7 @@ def main():
         color = colors[i]
         window.fill(color)
         time.sleep(duration)
-        i += 1
+        i + (i + 1) % len(colors)
 
         pygame.display.update()
 
