@@ -16,6 +16,7 @@ def lerp(start, end, steps):
 
 def main():
     colors = lerp((0, 20, 50), (255, 255, 255), 100)
+    colors = colors + colors[::-1]
     totalTime = 10
     duration = totalTime / len(colors)
     i = 0
